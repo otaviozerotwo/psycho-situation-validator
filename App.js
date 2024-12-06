@@ -8,8 +8,25 @@ const Stack = createNativeStackNavigator();
 function RootStack() {
   return (
     <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="FormRepository" component={FormRepository} />
+      <Stack.Screen 
+        name="Home" 
+        component={Home} />
+      <Stack.Screen 
+        name="FormRepository" 
+        component={FormRepository} 
+        options={{
+          title: 'Formulário Situações',
+          headerStyle: {
+            backgroundColor: '#202020',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+            fontSize: 24
+          },
+          headerShadowVisible: false
+        }}
+      />
     </Stack.Navigator>
   )
 }

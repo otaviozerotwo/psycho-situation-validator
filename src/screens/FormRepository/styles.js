@@ -8,15 +8,10 @@ const styles = StyleSheet.create({
   form: {
     margin: 32,
   },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-    color: "#fff",
-  },
   label: {
     fontSize: 16,
     fontWeight: "bold",
-    marginTop: 32,
+    marginTop: 24,
     marginBottom: 8,
     color: "#fff",
   },
