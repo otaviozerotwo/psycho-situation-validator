@@ -28,14 +28,14 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   textArea: {
-    height: 150,
+    height: 114,
     color: "#4D4D4D",
     borderColor: "#4D4D4D",
     borderWidth: 1,
     borderRadius: 8,
     textAlignVertical: "top",
     padding: 16,
-  }
+  },
 });
 
 export default styles;

@@ -3,8 +3,8 @@ import styles from "./styles";
 
 export default function FormRepository() {
   return (
-    <KeyboardAvoidingView 
-      behavior="padding"
+    <SafeAreaView 
+      // behavior="padding"
       style={styles.container}>
       <View style={styles.form}>
         <Text style={styles.title}>Formulário Situações</Text>
@@ -23,8 +23,26 @@ export default function FormRepository() {
           multiline
           // numberOfLines={5}
         />
+
+        <Text style={styles.label}>Pensamento automático</Text>
+        <TextInput 
+          style={styles.textArea}
+          placeholder="Descreva o pensamento automático ..."
+          placeholderTextColor="#4D4D4D"
+          multiline
+          // numberOfLines={5}
+        />
+
+        <Text style={styles.label}>Reflexões</Text>
+        <TextInput 
+          style={styles.textArea}
+          placeholder="Descreva as reflexões ..."
+          placeholderTextColor="#4D4D4D"
+          multiline
+          // numberOfLines={5}
+        />
       </View>
 
-    </KeyboardAvoidingView>
+    </SafeAreaView>
   );
 }
