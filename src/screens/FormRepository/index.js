@@ -1,12 +1,12 @@
-import { KeyboardAvoidingView, SafeAreaView, Text, TextInput, View } from "react-native";
+import { Button, KeyboardAvoidingView, Platform, SafeAreaView, ScrollView, Text, TextInput, View } from "react-native";
 import styles from "./styles";
 
 export default function FormRepository() {
   return (
-    <SafeAreaView 
-      // behavior="padding"
+    <ScrollView 
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={styles.container}>
-      <View style={styles.form}>
+      <KeyboardAvoidingView style={styles.form}>
         <Text style={styles.label}>Data/Hora</Text>
         <TextInput 
           style={styles.input}
@@ -40,8 +40,10 @@ export default function FormRepository() {
           multiline
           // numberOfLines={5}
         />
-      </View>
 
-    </SafeAreaView>
+        <Button title="Enviar" />
+      </KeyboardAvoidingView>
+
+    </ScrollView>
   );
 }

@@ -6,7 +6,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#202020",
   },
   form: {
-    margin: 32,
+    flex: 1,
+    marginVertical: 24,
+    marginHorizontal: 32,
   },
   label: {
     fontSize: 16,
